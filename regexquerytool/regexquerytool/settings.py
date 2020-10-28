@@ -25,7 +25,25 @@ SECRET_KEY = '+riz0y46l$)qoma@-*rkcj3sy9wr*g!$s%x-q04p_+=l@3l#&k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = []
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:8000',
+]
 
 
 # Application definition
@@ -37,18 +55,26 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'querytool', 
-    'rest_framework'
+    'corsheaders',
+    'users',
+    'rest_framework', 
+    'frontend',
+    'regextool',
+    
 ]
 
+
 MIDDLEWARE = [
+    
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'regextool.middleware.MyMd'
 ]
 
 ROOT_URLCONF = 'regexquerytool.urls'
