@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development --watch ./regexquerytool/frontend/src/index.js --output-path ./regexquerytool/frontend/static/frontend/",
+    "build": "webpack --mode production ./regexquerytool/frontend/src/index.js --output-path ./regexquerytool/frontend/static/frontend/"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,26 @@
   },
   "homepage": "https://github.com/yasminhillis/regex_query_tool#readme",
   "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "webpack": "^5.2.0",
     "webpack-cli": "^4.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-alert": "^7.0.2",
+    "react-alert-template-basic": "^1.0.0",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-transition-group": "^4.4.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
   }
 }
