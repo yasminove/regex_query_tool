@@ -19,6 +19,8 @@ class Alerts extends Component {
         if(message !== prevProp.message){
             if(message.addUser) alert.success(message.addUser)
             if(message.deleteUser) alert.success(message.deleteUser)
+            if(message.resultFail) alert.error(message.resultFail)
+            if(message.resultSuccess) alert.success(message.resultSuccess)
         }
     }
     render(){
