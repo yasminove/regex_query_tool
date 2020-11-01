@@ -1,1 +1,1 @@
-web: gunicorn regex_query_tool.wsgi
+web: gunicorn regexquerytool.regexquerytool.wsgi
