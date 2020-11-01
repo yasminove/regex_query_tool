@@ -14,7 +14,7 @@ queryset = Tool.objects.all()
 
 def myview(request):
     request = HttpRequest()
-    print(request.get_full_path(), 'metammmmmmmmmmmmmmm')
+    # print(request.get_full_path(), 'metammmmmmmmmmmmmmm')
     # print(request.META['QUERY_STRING'], 'query')
     # print(request.GET.get('regex', 'regex'), 'query')
     # query = request.GET.get('regex', 'regex')
@@ -26,7 +26,7 @@ def myview(request):
     # print(content, 'body')
     for key in queryset:
         very_last1 = Tool.objects.last()
-        print(very_last1.text, 'very_last1')
+        # print(very_last1.text, 'very_last1')
         # print(queryset[len(queryset) - 1] , 'queryset len')
         last_entry = queryset[len(queryset) -1 ]
         # print(last_entry.text, 'mmmm')

@@ -60,9 +60,13 @@ INSTALLED_APPS = [
     'rest_framework', 
     'frontend',
     'regextool',
-    
+    'knox', 
+    'accounts'
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': ('knox.auth.TokenAuthentication',)
+}
 
 MIDDLEWARE = [
     
