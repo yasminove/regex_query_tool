@@ -61,10 +61,10 @@ INSTALLED_APPS = [
     'corsheaders',
     'regexquerytool.users',
     'rest_framework', 
-    'frontend',
+    'regexquerytool.frontend',
     'regextool',
     'knox', 
-    'accounts'
+    'regexquerytool.accounts'
 ]
 
 REST_FRAMEWORK = {
