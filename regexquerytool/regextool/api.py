@@ -28,7 +28,7 @@ class ToolViewSet(viewsets.ModelViewSet):
         # print(key.text)
         newVal = evalRegex(key.regex, key.text)
         # print(newVal)
-        key.result = newVal
+        # key.result = newVal
         # print(key.result, 'kkkkkkkeyyyyyyy')
         # key.text =  newVal  
         
