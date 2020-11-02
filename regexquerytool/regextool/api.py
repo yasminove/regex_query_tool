@@ -27,9 +27,9 @@ class ToolViewSet(viewsets.ModelViewSet):
         # print(queryset[0], '0')
         # print(key.text)
         newVal = evalRegex(key.regex, key.text)
-        print(newVal)
+        # print(newVal)
         key.result = newVal
-        print(key.result, 'kkkkkkkeyyyyyyy')
+        # print(key.result, 'kkkkkkkeyyyyyyy')
         # key.text =  newVal  
         
     # for key in queryset:
@@ -54,7 +54,7 @@ class ViewSet(viewsets.ModelViewSet):
     queryset = Tool.objects.all()
     def myview(self, request):
         request = HttpRequest()
-        print(request.get_full_path(), 'metammmmmmmmmmmmmmm')
+        # print(request.get_full_path(), 'metammmmmmmmmmmmmmm')
         # print(request.META['QUERY_STRING'], 'query')
         # print(request.GET.get('regex', 'regex'), 'query')
         # query = request.GET.get('regex', 'regex')
@@ -67,7 +67,7 @@ class ViewSet(viewsets.ModelViewSet):
         for key in queryset:
             # print(queryset[len(queryset) - 1] , 'queryset len')
             last_entry = queryset[len(queryset) - 1] 
-            print(last_entry.regex, last_entry.text, 'heeeerrrrrre')
+            # print(last_entry.regex, last_entry.text, 'heeeerrrrrre')
             return HttpResponse(evalRegex(key.regex, key.text))
 
             
