@@ -12,6 +12,7 @@ djangorestframework = "*"
 django-rest-knox = "*"
 django-cors-headers = "*"
 gunicorn = "*"
+django-heroku = "*"
 
 [requires]
 python_version = "3.9"
