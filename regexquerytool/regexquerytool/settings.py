@@ -64,11 +64,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'users',
     'rest_framework', 
-    'regexquerytool.frontend',
-    'regexquerytool.regextool',
+    'frontend',
+    'regextool',
     'knox', 
-    'regexquerytool.accounts'
+    'accounts'
 ]
 
 REST_FRAMEWORK = {
