@@ -59,7 +59,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'users',
+    'regexquerytool.regexquerytool.users',
     'rest_framework', 
     'frontend',
     'regextool',
