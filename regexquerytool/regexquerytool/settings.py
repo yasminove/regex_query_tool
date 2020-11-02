@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'regexquerytool.users',
     'rest_framework', 
     'regexquerytool.frontend',
+    'regexquerytool.regextool',
     'knox', 
     'regexquerytool.accounts'
 ]
@@ -80,7 +81,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'regextool.middleware.MyMd'
+    'regexquerytool.regextool.middleware.MyMd'
 ]
 
 ROOT_URLCONF = 'regexquerytool.urls'
