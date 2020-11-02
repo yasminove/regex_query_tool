@@ -1,25 +1,25 @@
-# from regextool.models import Tool
+from regextool.models import Tool
 # from regextool.models import ModifyTool
-# from rest_framework import viewsets, permissions
-# from .serializers import ToolSerializer
+from rest_framework import viewsets, permissions
+from .serializers import ToolSerializer
 # from .re import evalRegex
 # from django.http import HttpRequest
 
 
-# class ToolViewSet(viewsets.ModelViewSet):
-#     queryset = Tool.objects.all()
-#     # newTool = ModifyTool.objects.all()
-#     # for key in newTool:
-#     #     print(key)
-#     # print(queryset[0].valid, 'queryset')
-#     # print(queryset[0].result, 'queryset')
-#     # newTool = Tool.modified_objects.all()
-#     # for key in newTool:
-#     #     print(key, 'jjjjjjj')
-#     permission_classes = [
-#         permissions.AllowAny
-#     ]
-#     serializer_class = ToolSerializer
+class ToolViewSet(viewsets.ModelViewSet):
+    queryset = Tool.objects.all()
+    # newTool = ModifyTool.objects.all()
+    # for key in newTool:
+    #     print(key)
+    # print(queryset[0].valid, 'queryset')
+    # print(queryset[0].result, 'queryset')
+    # newTool = Tool.modified_objects.all()
+    # for key in newTool:
+    #     print(key, 'jjjjjjj')
+    permission_classes = [
+        permissions.AllowAny
+    ]
+    serializer_class = ToolSerializer
    
 
 #     for key in queryset:
