@@ -18,7 +18,7 @@ if path not in sys.path:
     sys.path.append(path)
 
 
-project_home = u'Desktop/regex_query_tool'
+project_home = u'regex_query_tool/regexquerytool/regexquerytool.setting.py'
 
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'regexquerytool.settings'    
