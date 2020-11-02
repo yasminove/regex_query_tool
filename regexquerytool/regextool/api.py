@@ -1,5 +1,5 @@
-from regextool.models import Tool
-# from regextool.models import ModifyTool
+from regexquerytool.regextool.models import Tool
+from regexquerytool.regextool.models import ModifyTool
 from rest_framework import viewsets, permissions
 from .serializers import ToolSerializer
 from .re import evalRegex
@@ -22,33 +22,33 @@ class ToolViewSet(viewsets.ModelViewSet):
     serializer_class = ToolSerializer
    
 
-#     for key in queryset:
-#         # print(key, 'key')
-#         # print(queryset[0], '0')
-#         # print(key.text)
-#         newVal = evalRegex(key.regex, key.text)
-#         # print(newVal)
-#         # key.result = newVal
-#         # print(key.result, 'kkkkkkkeyyyyyyy')
-#         # key.text =  newVal  
+    for key in queryset:
+        # print(key, 'key')
+        # print(queryset[0], '0')
+        # print(key.text)
+        newVal = evalRegex(key.regex, key.text)
+        # print(newVal)
+        key.result = newVal
+        # print(key.result, 'kkkkkkkeyyyyyyy')
+        # key.text =  newVal  
         
-#     # for key in queryset:
-#     #     print(key.text, 'second kkkkkk')
+    # for key in queryset:
+    #     print(key.text, 'second kkkkkk')
 
-#     # print(queryset[0].text, 'querysesssssssssssssssst')     
+    # print(queryset[0].text, 'querysesssssssssssssssst')     
 
-#     # for key in queryset:
-#         # print(key.text, 'heyyyyyyy')  
+    # for key in queryset:
+        # print(key.text, 'heyyyyyyy')  
 
-#         # print(queryset.text , 'text')
-#     # queryset.text =  newVal  
-#     # print(queryset.text , 'sssiii')
-#     # print(queryset[0].text, 'texttttttttttttt88888')
+        # print(queryset.text , 'text')
+    # queryset.text =  newVal  
+    # print(queryset.text , 'sssiii')
+    # print(queryset[0].text, 'texttttttttttttt88888')
     
   
 
 queryset = Tool.objects.all()
-# # print(queryset, '00000queryset00000000')
+# print(queryset, '00000queryset00000000')
 
 class ViewSet(viewsets.ModelViewSet):
     queryset = Tool.objects.all()
