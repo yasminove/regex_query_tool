@@ -62,7 +62,7 @@ INSTALLED_APPS = [
     'regexquerytool.users',
     'rest_framework', 
     'regexquerytool.frontend',
-    'regextool',
+    'regexquerytool.regextool',
     'knox', 
     'regexquerytool.accounts'
 ]
