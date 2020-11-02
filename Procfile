@@ -1,3 +1,5 @@
-web: gunicorn regexquerytool.regexquerytool.wsgi:application --log-file - --log-level debug
+web: gunicorn regex_query_tool.wsgi:regexquerytool --log-file - --log-level debug
 python manage.py collectstatic --noinput
 manage.py migrate
+
+
