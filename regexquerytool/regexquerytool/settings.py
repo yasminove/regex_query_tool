@@ -86,7 +86,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'regexquerytool.regextool.middleware.MyMd'
+    'regextool.middleware.MyMd'
 ]
 
 sys.path.append(os.path.join(BASE_DIR, 'regexquerytool'))
