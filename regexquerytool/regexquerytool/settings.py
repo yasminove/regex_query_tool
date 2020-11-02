@@ -91,7 +91,7 @@ MIDDLEWARE = [
 
 sys.path.append(os.path.join(BASE_DIR, 'regexquerytool'))
 
-ROOT_URLCONF = 'regexquerytool.regexquerytool.urls'
+ROOT_URLCONF = 'regexquerytool.urls'
 
 TEMPLATES = [
     {
