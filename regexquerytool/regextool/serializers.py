@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from regextool.models import Tool
+from regexquerytool.regextool.models import Tool
 
 
 class ToolSerializer(serializers.ModelSerializer):
