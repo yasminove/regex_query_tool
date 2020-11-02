@@ -1,3 +1,3 @@
-web: gunicorn regexquerytool.regexquerytool.wsgi -b 127.0.0.1:8000
+gunicorn regexquerytool.wsgi:regexquerytool --preload --workers 1 -b 127.0.0.1:8000
 
 
