@@ -87,6 +87,8 @@ MIDDLEWARE = [
     'regexquerytool.regextool.middleware.MyMd'
 ]
 
+sys.path.append(os.path.join(BASE_DIR, 'regexquerytool'))
+
 ROOT_URLCONF = 'regexquerytool.urls'
 
 TEMPLATES = [
