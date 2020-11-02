@@ -1,5 +1,5 @@
-from regextool.models import Tool
-from regextool.models import ModifyTool
+from regexquerytool.regextool.models import Tool
+from regexquerytool.regextool.models import ModifyTool
 from rest_framework import viewsets, permissions
 from .serializers import ToolSerializer
 from .re import evalRegex
