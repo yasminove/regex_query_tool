@@ -64,12 +64,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'users',
+    'regexquerytool.users',
     'rest_framework', 
-    'frontend',
-    'regextool',
+    'regexquerytool.frontend',
+    'regexquerytool.regextool',
     'knox', 
-    'accounts'
+    'regexquerytool.accounts'
 ]
 
 REST_FRAMEWORK = {
@@ -86,12 +86,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'regextool.middleware.MyMd'
+    'regexquerytool.regextool.middleware.MyMd'
 ]
 
 sys.path.append(os.path.join(BASE_DIR, 'regexquerytool'))
 
-ROOT_URLCONF = 'regexquerytool.urls'
+ROOT_URLCONF = 'regexquerytool.regexquerytool.urls'
 
 TEMPLATES = [
     {
