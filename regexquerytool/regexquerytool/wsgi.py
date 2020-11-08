@@ -9,22 +9,25 @@ https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/
 
 import os
 import sys
-from pathlib import Path
-path = 'regexquerytool.settings'
+# from pathlib import Path
+# path = 'regexquerytool.settings'
 
 from django.core.wsgi import get_wsgi_application    
 
-if path not in sys.path:
-    sys.path.append(path)
+# if path not in sys.path:
+#     sys.path.append(path)
 
 
-project_home = u'Desktop/regex_query_tool'
+    
+
+
+# project_home = u'/app/regexquerytool/regexquerytool/wsgi.py'
 
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'regexquerytool.settings'    
 
 
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'regexquerytool.settings.dev')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'regexquerytool.settings')
 
 application = get_wsgi_application()
