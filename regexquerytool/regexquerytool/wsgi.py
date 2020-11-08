@@ -24,10 +24,10 @@ from django.core.wsgi import get_wsgi_application
 # project_home = u'/app/regexquerytool/regexquerytool/wsgi.py'
 
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'regexquerytool.regexquerytool.settings'    
+os.environ['DJANGO_SETTINGS_MODULE'] = 'regexquerytool.settings'    
 
 
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'regexquerytool.settings.dev')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'regexquerytool.settings')
 
 application = get_wsgi_application()
